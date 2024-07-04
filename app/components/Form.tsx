@@ -1,5 +1,4 @@
 "use client";
-// because of reach hooks
 
 import React, { useEffect, useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -524,7 +523,7 @@ const Form: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
               <div className="form-control">
                 <label htmlFor="todaysDate" className="label">
-                  Today's Date
+                  Today&apos;s Date
                 </label>
                 <input
                   type="date"
