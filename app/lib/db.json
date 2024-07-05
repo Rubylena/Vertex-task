@@ -1,7 +1,184 @@
 {
-    "students": [
+  "students": [
+    {
+      "id": "649f",
+      "collegeSports": [
         {
-            "name": "John"
+          "sport": "gt",
+          "college": "ew",
+          "varsity": "wdf",
+          "semester": "ws",
+          "year": "qde"
         }
-    ]
+      ],
+      "collegesAttended": [
+        {
+          "state": "1",
+          "city": "Lagos",
+          "college": "git",
+          "to": "2024-06-30T23:00:00.000Z",
+          "from": "2024-04-30T23:00:00.000Z"
+        }
+      ],
+      "lastDateAttended": "2024-07-02T23:00:00.000Z",
+      "highSchool": "Lagos",
+      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "telephone": "08136285533",
+      "address": "House 32, Road 11, Ikota Villa",
+      "todaysDate": "2024-07-04T23:00:00.000Z",
+      "studentId": "4532wdr",
+      "gender": "Female",
+      "middleInitial": "O",
+      "lastName": "Archibong",
+      "firstName": "Miracle",
+      "previousSeasons": "1",
+      "sportThisSeason": "Soccer",
+      "presentConference": "juk",
+      "presentCollege": "34"
+    },
+    {
+      "id": "34b6",
+      "collegeSports": [
+        {
+          "sport": "gt",
+          "college": "ew",
+          "varsity": "wdf",
+          "semester": "ws",
+          "year": "qde"
+        }
+      ],
+      "collegesAttended": [
+        {
+          "state": "1",
+          "city": "Lagos",
+          "college": "git",
+          "to": "2024-06-30T23:00:00.000Z",
+          "from": "2024-04-30T23:00:00.000Z"
+        }
+      ],
+      "lastDateAttended": "2024-07-02T23:00:00.000Z",
+      "highSchool": "Lagos",
+      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "telephone": "08136285533",
+      "address": "House 32, Road 11, Ikota Villa",
+      "todaysDate": "2024-07-04T23:00:00.000Z",
+      "studentId": "4532wdr",
+      "gender": "Female",
+      "middleInitial": "O",
+      "lastName": "Archibong",
+      "firstName": "Miracle",
+      "previousSeasons": "1",
+      "sportThisSeason": "Soccer",
+      "presentConference": "juk",
+      "presentCollege": "34"
+    },
+    {
+      "id": "c609",
+      "collegeSports": [
+        {
+          "sport": "gt",
+          "college": "ew",
+          "varsity": "wdf",
+          "semester": "ws",
+          "year": "qde"
+        }
+      ],
+      "collegesAttended": [
+        {
+          "state": "1",
+          "city": "Lagos",
+          "college": "git",
+          "to": "2024-06-30T23:00:00.000Z",
+          "from": "2024-04-30T23:00:00.000Z"
+        }
+      ],
+      "lastDateAttended": "2024-07-02T23:00:00.000Z",
+      "highSchool": "Lagos",
+      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "telephone": "08136285533",
+      "address": "House 32, Road 11, Ikota Villa",
+      "todaysDate": "2024-07-04T23:00:00.000Z",
+      "studentId": "4532wdr",
+      "gender": "Female",
+      "middleInitial": "O",
+      "lastName": "Archibong",
+      "firstName": "Miracle",
+      "previousSeasons": "1",
+      "sportThisSeason": "Soccer",
+      "presentConference": "juk",
+      "presentCollege": "34"
+    },
+    {
+      "id": "7d24",
+      "collegeSports": [
+        {
+          "sport": "gt",
+          "college": "ew",
+          "varsity": "wdf",
+          "semester": "ws",
+          "year": "qde"
+        }
+      ],
+      "collegesAttended": [
+        {
+          "state": "1",
+          "city": "Lagos",
+          "college": "git",
+          "to": "2024-06-30T23:00:00.000Z",
+          "from": "2024-04-30T23:00:00.000Z"
+        }
+      ],
+      "lastDateAttended": "2024-07-02T23:00:00.000Z",
+      "highSchool": "Lagos",
+      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "telephone": "08136285533",
+      "address": "House 32, Road 11, Ikota Villa",
+      "todaysDate": "2024-07-04T23:00:00.000Z",
+      "studentId": "4532wdr",
+      "gender": "Female",
+      "middleInitial": "O",
+      "lastName": "Archibong",
+      "firstName": "Miracle",
+      "previousSeasons": "1",
+      "sportThisSeason": "Soccer",
+      "presentConference": "juk",
+      "presentCollege": "34"
+    },
+    {
+      "id": "9ec8",
+      "collegeSports": [
+        {
+          "sport": "gt",
+          "college": "ew",
+          "varsity": "wdf",
+          "semester": "ws",
+          "year": "qde"
+        }
+      ],
+      "collegesAttended": [
+        {
+          "state": "1",
+          "city": "Lagos",
+          "college": "git",
+          "to": "2024-06-30T23:00:00.000Z",
+          "from": "2024-04-30T23:00:00.000Z"
+        }
+      ],
+      "lastDateAttended": "2024-07-02T23:00:00.000Z",
+      "highSchool": "Lagos",
+      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "telephone": "08136285533",
+      "address": "House 32, Road 11, Ikota Villa",
+      "todaysDate": "2024-07-04T23:00:00.000Z",
+      "studentId": "4532wdr",
+      "gender": "Female",
+      "middleInitial": "O",
+      "lastName": "Archibong",
+      "firstName": "Miracle",
+      "previousSeasons": "1",
+      "sportThisSeason": "Soccer",
+      "presentConference": "juk",
+      "presentCollege": "34"
+    }
+  ]
 }

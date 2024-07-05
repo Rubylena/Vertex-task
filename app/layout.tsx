@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./styles/globals.css";
-import Image from "next/image";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Header } from "./components/Header";
+import { ThemeProvider } from "./context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,24 +20,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <a
-          className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          By{" "}
-          <Image
-            src="/Vertex-Logo.svg"
-            alt="Vertex Logo"
-            // className="dark:invert"
-            width={100}
-            height={24}
-            priority
-          />
-        </a>
-        {children}
+      <body className={`${inter.className} p-5 md:p-10 lg:p-20`}>
+        <ThemeProvider>
+          <Header />
+          {children}
+        </ThemeProvider>
+
+        <ToastContainer
+          autoClose={3000}
+          draggable={false}
+          position="top-right"
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnHover
+        />
       </body>
     </html>
   );
