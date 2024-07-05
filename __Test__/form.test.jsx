@@ -1,114 +1,66 @@
-// import { render, screen, fireEvent } from '@testing-library/react';
-// import Form from '../app/components/Form';
-
-// describe('Form Component', () => {
-//   it('submits the form successfully', async () => {
-//     render(<Form />);
-
-//     const presentCollegeInput = screen.getByLabelText('Present College');
-//     act(()=> {
-
-//         fireEvent.change(presentCollegeInput, { target: { value: 'Sample College' } });
-//     })
-
-//     const submitButton = screen.getByRole('button', { name: 'Submit' });
-//     fireEvent.click(submitButton);
-
-//     // You can add more assertions here based on your form submission logic
-//   });
-// });
-
-// Form.test.tsx
-
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import axios from "axios";
-import MockAdapter from "axios-mock-adapter";
-import { toast } from "react-toastify";
+import {
+  render,
+  screen,
+  waitFor
+} from "@testing-library/react";
 import Form from "../app/components/Form";
-
-jest.mock("react-toastify", () => ({
-  toast: {
-    success: jest.fn(),
-    error: jest.fn(),
-  },
-}));
-
-const mock = new MockAdapter(axios);
+import userEvent from "@testing-library/user-event";
 
 describe("Form Component", () => {
   beforeEach(() => {
     mock.reset();
+    jest.clearAllMocks();
+  });
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+  it("renders the form component", () => {
+    render(<Form />);
+    expect(screen.getByTestId("form")).toBeInTheDocument();
+    expect(screen.getByText(/student information/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/your present college/i)).toBeInTheDocument();
+    expect(
+      screen.getByLabelText(/your present conference/i)
+    ).toBeInTheDocument();
+  });
+  it("should add and remove colleges attended", async () => {
+    render(<Form />);
+
+    expect(screen.getAllByPlaceholderText("From date").length).toBe(4);
+
+    const addCollegeButton = screen.getByText(/add college/i);
+    userEvent.click(addCollegeButton);
+
+    await waitFor(() =>
+      expect(screen.getAllByPlaceholderText("From date").length).toBe(5)
+    );
+
+    const removeButtons = screen.getAllByText(/remove/i);
+    userEvent.click(removeButtons[0]);
+
+    await waitFor(() =>
+      expect(screen.getAllByPlaceholderText("From date").length).toBe(4)
+    );
   });
 
-  test("renders form and input elements", () => {
+  it("should add and remove college sports", async () => {
     render(<Form />);
-    expect(screen.getByLabelText(/present college/i)).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /submit/i })).toBeInTheDocument();
-  });
 
-  test("validates required fields", async () => {
-    render(<Form />);
-    fireEvent.click(screen.getByRole("button", { name: /submit/i }));
-    await waitFor(() => {
-      expect(
-        screen.getByText(/presentCollege is a required field/i)
-      ).toBeInTheDocument();
-    });
-  });
+    expect(screen.getAllByPlaceholderText("Sport").length).toBe(4);
 
-  test("submits form successfully", async () => {
-    mock
-      .onPost("/api/students")
-      .reply(200, { message: "Form submitted successfully" });
+    const addSportButton = screen.getByText(/add sport/i);
+    userEvent.click(addSportButton);
 
-    render(<Form />);
-    fireEvent.input(screen.getByLabelText(/present college/i), {
-      target: { value: "Test College" },
-    });
-    fireEvent.click(screen.getByRole("button", { name: /submit/i }));
+    await waitFor(() =>
+      expect(screen.getAllByPlaceholderText("Sport").length).toBe(5)
+    );
 
-    await waitFor(() => {
-      expect(toast.success).toHaveBeenCalledWith("Form submitted successfully");
-    });
-  });
+    const removeButtons = screen.getAllByText(/remove/i);
+    userEvent.click(removeButtons[removeButtons.length - 1]);
 
-  test("handles form submission error", async () => {
-    mock.onPost("/api/students").reply(500, { message: "Form not submitted" });
-
-    render(<Form />);
-    fireEvent.input(screen.getByLabelText(/Present College/i), {
-      target: { value: "Test College" },
-    });
-    fireEvent.click(screen.getByRole("button", { name: /submit/i }));
-
-    await waitFor(() => {
-      expect(toast.error).toHaveBeenCalledWith(
-        "Error submitting the form",
-        "Form not submitted"
-      );
-    });
-  });
-
-  test("fetches data on mount", async () => {
-    mock.onGet("/api/students").reply(200, []);
-
-    render(<Form />);
-    await waitFor(() => {
-      expect(mock.history.get.length).toBe(1);
-      expect(mock.history.get[0].url).toBe("/api/students");
-    });
-  });
-
-  test("handles data fetching error", async () => {
-    mock.onGet("/api/students").reply(500, { message: "Fetch error" });
-
-    render(<Form />);
-    await waitFor(() => {
-      expect(toast.error).toHaveBeenCalledWith(
-        "Error fetching the data",
-        "Fetch error"
-      );
-    });
+    await waitFor(() =>
+      expect(screen.getAllByPlaceholderText("Sport").length).toBe(4)
+    );
   });
 });

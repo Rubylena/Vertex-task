@@ -90,7 +90,11 @@ const Form: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="card mt-8">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="card mt-8"
+      data-testid="form"
+    >
       <div className="card-body p-0 ">
         <div className="flex items-center justify-between flex-col sm:flex-row gap-2">
           <h2 className="text-xl font-semibold mb-4">
@@ -162,7 +166,10 @@ const Form: React.FC = () => {
               )}
             </div>
             <div className="form-control items-center">
-              <label className="label max-w-60 text-center">
+              <label
+                className="label max-w-60 text-center"
+                htmlFor="previousSeasons0"
+              >
                 Previous Seasons of Completion Used in This Sport
               </label>
               <div className="flex items-center gap-2">
@@ -234,7 +241,9 @@ const Form: React.FC = () => {
           </div>
 
           <div className="form-control md:items-center">
-            <label className="label">Gender</label>
+            <label className="label" htmlFor="genderMale">
+              Gender
+            </label>
             <div className="flex flex-col">
               <div className="flex gap-2">
                 <input
@@ -308,7 +317,7 @@ const Form: React.FC = () => {
             )}
           </div>
           <div className="form-control">
-            <label htmlFor="phoneNumber" className="label">
+            <label htmlFor="telephone" className="label">
               Telephone
             </label>
             <input
@@ -383,7 +392,10 @@ const Form: React.FC = () => {
             <em>Do</em> include summer school. <em>Do not</em> include summer{" "}
             <em>jobs</em>.
           </p>
-          <div className="overflow-x-auto">
+          <div
+            className="overflow-x-auto"
+            data-testid="college-attended-section"
+          >
             <table className="table table-xs w-full">
               <thead>
                 <tr>
@@ -500,7 +512,7 @@ const Form: React.FC = () => {
             <em>club sports, JV, and varsity contests</em> since high school:
             (if you only practiced or scrimmaged in a sport, please state.)
           </p>
-          <div className="overflow-x-auto">
+          <div className="overflow-x-auto" data-testid="college-sport-section">
             <table className="table table-xs w-full">
               <thead>
                 <tr>
