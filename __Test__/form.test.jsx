@@ -1,15 +1,10 @@
 import React from "react";
-import {
-  render,
-  screen,
-  waitFor
-} from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import Form from "../app/components/Form";
 import userEvent from "@testing-library/user-event";
 
 describe("Form Component", () => {
   beforeEach(() => {
-    mock.reset();
     jest.clearAllMocks();
   });
   afterEach(() => {
