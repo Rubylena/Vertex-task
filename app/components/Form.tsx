@@ -165,9 +165,9 @@ const Form: React.FC = () => {
                 </p>
               )}
             </div>
-            <div className="form-control items-center">
+            <div className="form-control md:items-center">
               <label
-                className="label max-w-60 text-center"
+                className="md:max-w-60 md:text-center"
                 htmlFor="previousSeasons0"
               >
                 Previous Seasons of Completion Used in This Sport

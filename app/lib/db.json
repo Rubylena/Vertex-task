@@ -1,184 +1,52 @@
 {
   "students": [
     {
-      "id": "649f",
-      "collegeSports": [
-        {
-          "sport": "gt",
-          "college": "ew",
-          "varsity": "wdf",
-          "semester": "ws",
-          "year": "qde"
-        }
-      ],
-      "collegesAttended": [
-        {
-          "state": "1",
-          "city": "Lagos",
-          "college": "git",
-          "to": "2024-06-30T23:00:00.000Z",
-          "from": "2024-04-30T23:00:00.000Z"
-        }
-      ],
-      "lastDateAttended": "2024-07-02T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "id": "b171",
+      "collegeSports": [],
+      "collegesAttended": [],
+      "lastDateAttended": "2024-07-03T23:00:00.000Z",
+      "highSchool": "Ikota, Lagos state",
+      "dateOfBirth": "2002-12-29T23:00:00.000Z",
       "telephone": "08136285533",
-      "address": "House 32, Road 11, Ikota Villa",
+      "address": "Test address",
       "todaysDate": "2024-07-04T23:00:00.000Z",
-      "studentId": "4532wdr",
+      "studentId": "1230",
       "gender": "Female",
-      "middleInitial": "O",
-      "lastName": "Archibong",
-      "firstName": "Miracle",
-      "previousSeasons": "1",
+      "middleInitial": "O.",
+      "lastName": "Grace",
+      "firstName": "Effiong",
+      "previousSeasons": "0",
       "sportThisSeason": "Soccer",
-      "presentConference": "juk",
-      "presentCollege": "34"
+      "presentConference": "test",
+      "presentCollege": "Test"
     },
     {
-      "id": "34b6",
-      "collegeSports": [
-        {
-          "sport": "gt",
-          "college": "ew",
-          "varsity": "wdf",
-          "semester": "ws",
-          "year": "qde"
-        }
-      ],
+      "id": "c210",
+      "collegeSports": [],
       "collegesAttended": [
         {
-          "state": "1",
-          "city": "Lagos",
-          "college": "git",
+          "state": "tes",
+          "city": "test",
+          "college": "test",
           "to": "2024-06-30T23:00:00.000Z",
-          "from": "2024-04-30T23:00:00.000Z"
+          "from": "2024-01-31T23:00:00.000Z"
         }
       ],
-      "lastDateAttended": "2024-07-02T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-06-06T23:00:00.000Z",
+      "lastDateAttended": "2024-07-03T23:00:00.000Z",
+      "highSchool": "Ikota, Lagos state",
+      "dateOfBirth": "2002-12-29T23:00:00.000Z",
       "telephone": "08136285533",
-      "address": "House 32, Road 11, Ikota Villa",
+      "address": "Test address",
       "todaysDate": "2024-07-04T23:00:00.000Z",
-      "studentId": "4532wdr",
+      "studentId": "1230",
       "gender": "Female",
-      "middleInitial": "O",
-      "lastName": "Archibong",
-      "firstName": "Miracle",
-      "previousSeasons": "1",
+      "middleInitial": "O.",
+      "lastName": "Grace",
+      "firstName": "Effiong",
+      "previousSeasons": "0",
       "sportThisSeason": "Soccer",
-      "presentConference": "juk",
-      "presentCollege": "34"
-    },
-    {
-      "id": "c609",
-      "collegeSports": [
-        {
-          "sport": "gt",
-          "college": "ew",
-          "varsity": "wdf",
-          "semester": "ws",
-          "year": "qde"
-        }
-      ],
-      "collegesAttended": [
-        {
-          "state": "1",
-          "city": "Lagos",
-          "college": "git",
-          "to": "2024-06-30T23:00:00.000Z",
-          "from": "2024-04-30T23:00:00.000Z"
-        }
-      ],
-      "lastDateAttended": "2024-07-02T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-06-06T23:00:00.000Z",
-      "telephone": "08136285533",
-      "address": "House 32, Road 11, Ikota Villa",
-      "todaysDate": "2024-07-04T23:00:00.000Z",
-      "studentId": "4532wdr",
-      "gender": "Female",
-      "middleInitial": "O",
-      "lastName": "Archibong",
-      "firstName": "Miracle",
-      "previousSeasons": "1",
-      "sportThisSeason": "Soccer",
-      "presentConference": "juk",
-      "presentCollege": "34"
-    },
-    {
-      "id": "7d24",
-      "collegeSports": [
-        {
-          "sport": "gt",
-          "college": "ew",
-          "varsity": "wdf",
-          "semester": "ws",
-          "year": "qde"
-        }
-      ],
-      "collegesAttended": [
-        {
-          "state": "1",
-          "city": "Lagos",
-          "college": "git",
-          "to": "2024-06-30T23:00:00.000Z",
-          "from": "2024-04-30T23:00:00.000Z"
-        }
-      ],
-      "lastDateAttended": "2024-07-02T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-06-06T23:00:00.000Z",
-      "telephone": "08136285533",
-      "address": "House 32, Road 11, Ikota Villa",
-      "todaysDate": "2024-07-04T23:00:00.000Z",
-      "studentId": "4532wdr",
-      "gender": "Female",
-      "middleInitial": "O",
-      "lastName": "Archibong",
-      "firstName": "Miracle",
-      "previousSeasons": "1",
-      "sportThisSeason": "Soccer",
-      "presentConference": "juk",
-      "presentCollege": "34"
-    },
-    {
-      "id": "9ec8",
-      "collegeSports": [
-        {
-          "sport": "gt",
-          "college": "ew",
-          "varsity": "wdf",
-          "semester": "ws",
-          "year": "qde"
-        }
-      ],
-      "collegesAttended": [
-        {
-          "state": "1",
-          "city": "Lagos",
-          "college": "git",
-          "to": "2024-06-30T23:00:00.000Z",
-          "from": "2024-04-30T23:00:00.000Z"
-        }
-      ],
-      "lastDateAttended": "2024-07-02T23:00:00.000Z",
-      "highSchool": "Lagos",
-      "dateOfBirth": "2001-06-06T23:00:00.000Z",
-      "telephone": "08136285533",
-      "address": "House 32, Road 11, Ikota Villa",
-      "todaysDate": "2024-07-04T23:00:00.000Z",
-      "studentId": "4532wdr",
-      "gender": "Female",
-      "middleInitial": "O",
-      "lastName": "Archibong",
-      "firstName": "Miracle",
-      "previousSeasons": "1",
-      "sportThisSeason": "Soccer",
-      "presentConference": "juk",
-      "presentCollege": "34"
+      "presentConference": "test",
+      "presentCollege": "Test"
     }
   ]
 }
