@@ -161,8 +161,8 @@ const Form: React.FC = () => {
                 </p>
               )}
             </div>
-            <div className="form-control items-center">
-              <label className="label max-w-60 text-center">
+            <div className="form-control md:items-center">
+              <label className="md:max-w-60 md:text-center">
                 Previous Seasons of Completion Used in This Sport
               </label>
               <div className="flex items-center gap-2">
